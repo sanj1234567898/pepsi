@@ -11,7 +11,7 @@ export const CardFacts = () => {
           <motion.div
             className="card__item"
             key={id}
-            variants={fadeIn("left", "tween", id * 0.03, 0.5)}
+            variants={fadeIn("left", "tween", id * 0.5, 0.5)}
             initial={"hidden"}
             animate={"show"}
           >
