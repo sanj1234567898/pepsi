@@ -65,15 +65,11 @@ ul li {
   position: absolute;
   top: 0;
   right: 0;
-  height: 40rem;
-  width: 40rem;
-  background-image: linear-gradient(
-    32.44deg,
-    hsl(0, 0%, 100%) 26%,
-    hsl(0, 0%, 100%) 74%,
-    hsl(0, 0%, 100%) 100%
-  );
-  filter: blur(300px);
+  z-index: 0;
+  height: calc(10rem + 15.625vw);
+  width: calc(10rem + 27.777vw);
+  background: #65c4fa;
+  filter: blur(150px);
 }
 
 /* NAV */
@@ -227,7 +223,7 @@ ul li {
   width: calc(15vw + 15vh);
   object-fit: cover;
 
-  filter: drop-shadow(-5mm 10mm 9mm rgb(0, 0, 0));
+  filter: drop-shadow(-5mm 10mm 15mm rgb(0, 0, 0));
 }
 
 @media screen and (min-width: 1285px) {
@@ -263,6 +259,7 @@ ul li {
     gap: 1.5rem;
     background-color: var(--first-color);
     transition: 1s;
+    z-index: 10;
   }
 
   .nav__menu {
