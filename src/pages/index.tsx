@@ -15,6 +15,8 @@ export default function Home() {
       <main className={"main"}>
         <Navbar />
 
+        <div className="gradient-01" />
+
         <div className="product">
           <div className="product__wraper">
             <div className="product__text">
