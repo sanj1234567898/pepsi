@@ -50,6 +50,7 @@ ul li {
 
 .btn {
   background-color: transparent;
+  cursor: pointer;
   border-radius: 5rem;
   color: var(--main-color);
   border: 0.2rem solid var(--main-color);
@@ -89,6 +90,7 @@ ul li {
   margin-left: auto;
   flex-wrap: nowrap;
   white-space: nowrap;
+  z-index: 10;
 }
 
 .nav__menu {
@@ -189,8 +191,14 @@ ul li {
 }
 
 .card__item {
+  flex-grow: 1;
   background-color: #312fa0;
   flex-basis: 11.7rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.card__item:hover {
+  scale: 1.05;
 }
 
 .card__top {
@@ -239,7 +247,7 @@ ul li {
   }
 
   .product {
-    margin: 0 2rem;
+    margin: 2rem 2rem;
   }
 
   .nav-btn {

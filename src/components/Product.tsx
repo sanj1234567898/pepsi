@@ -1,78 +1,73 @@
 import React from "react";
+import { CardFacts } from "./CardFacts";
+import { motion } from "framer-motion";
+import { fadeIn, textVariant, textVariant2 } from "../utils/framerMotion";
 
 export const Product = () => {
   return (
     <div className="product">
       <div className="product__wraper">
         <div className="product__text">
-          <h1 className="text__title">Pepsi Classic</h1>
-          <p className="text__desc">
+          <motion.h1
+            className="text__title"
+            variants={textVariant(0.2)}
+            initial={"hidden"}
+            animate={"show"}
+          >
+            Pepsi Classic
+          </motion.h1>
+          <motion.p
+            className="text__desc"
+            variants={textVariant(0.4)}
+            initial={"hidden"}
+            animate={"show"}
+          >
             Carbonated Water, High Fructose, Corn Syrup, Caramel Color, Sugar,
             Phosphoric Acid, Caffeine, Citric Acid, Natural Flavour
-          </p>
+          </motion.p>
         </div>
 
         <div className="product__facts">
-          <h3 className="facts__title">NUTRITIONAL FACTS</h3>
-          <div className="facts__card">
-            <div className="card__item">
-              <div className="card__top">
-                <p className="item__title">Sugar syrup</p>
-                <p className="item__gramm">150 cL</p>
-              </div>
-              <div className="card__bottom">
-                <p className="item__gramm2">150cL</p>
-              </div>
-            </div>
-            <div className="card__item">
-              <div className="card__top">
-                <p className="item__title">Sugar syrup</p>
-                <p className="item__gramm">150 cL</p>
-              </div>
-              <div className="card__bottom">
-                <p className="item__gramm2">150cL</p>
-              </div>
-            </div>{" "}
-            <div className="card__item">
-              <div className="card__top">
-                <p className="item__title">Sugar syrup</p>
-                <p className="item__gramm">150 cL</p>
-              </div>
-              <div className="card__bottom">
-                <p className="item__gramm2">150cL</p>
-              </div>
-            </div>{" "}
-            <div className="card__item">
-              <div className="card__top">
-                <p className="item__title">Sugar syrup</p>
-                <p className="item__gramm">150 cL</p>
-              </div>
-              <div className="card__bottom">
-                <p className="item__gramm2">150cL</p>
-              </div>
-            </div>{" "}
-            <div className="card__item">
-              <div className="card__top">
-                <p className="item__title">Sugar syrup</p>
-                <p className="item__gramm">150 cL</p>
-              </div>
-              <div className="card__bottom">
-                <p className="item__gramm2">150cL</p>
-              </div>
-            </div>
-          </div>
-          <p className="facts__desc">
+          <motion.h3
+            className="facts__title"
+            variants={textVariant(0.5)}
+            initial={"hidden"}
+            animate={"show"}
+          >
+            NUTRITIONAL FACTS
+          </motion.h3>
+
+          <CardFacts />
+
+          <motion.p
+            className="facts__desc"
+            variants={textVariant(0.6)}
+            initial={"hidden"}
+            animate={"show"}
+          >
             Rich in energy, our drinks will revitalize your body and get you
             ready for the day’s activities
-          </p>
+          </motion.p>
         </div>
 
-        <button className="btn">BUY NOW</button>
+        <motion.button
+          className="btn"
+          variants={fadeIn("left", "tween", 0.3, 1)}
+          initial={"hidden"}
+          animate={"show"}
+        >
+          BUY NOW
+        </motion.button>
       </div>
 
-      <div className="product__img">
+      <motion.div
+        className="product__img"
+        variants={textVariant2(1)}
+        initial={"hidden"}
+        animate={"show"}
+      >
         <img src="/images/pepsi-front.png" alt="pepsi" />
-      </div>
+      </motion.div>
     </div>
   );
 };

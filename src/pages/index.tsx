@@ -2,6 +2,9 @@ import Head from "next/head";
 import { Navbar } from "@/components/Navbar";
 import { Aside } from "@/components/Aside";
 import { Product } from "@/components/Product";
+import { motion } from "framer-motion";
+import Layout from "@/components/Layout";
+import { textVariant2 } from "@/utils/framerMotion";
 
 export default function Home() {
   return (
@@ -13,13 +16,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Aside />
-      <main className={"main"}>
+      <Layout>
         <Navbar />
-
-        <div className="gradient-01" />
-
+        <motion.div
+          className="gradient-01"
+          variants={textVariant2(2)}
+          initial={"hidden"}
+          animate={"show"}
+        />
         <Product />
-      </main>
+      </Layout>
     </>
   );
 }

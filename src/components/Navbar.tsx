@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { navLink } from "@/components/elements";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
+import { motion } from "framer-motion";
+import { navVariants } from "../utils/framerMotion";
 
 export const Navbar = () => {
   const [open, isOpen] = React.useState(false);
@@ -11,7 +13,12 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="header">
+    <motion.header
+      className="header"
+      variants={navVariants}
+      initial={"hidden"}
+      animate={"show"}
+    >
       <img src={"/images/logo.png"} alt={"logo"} />
       <nav className={`nav ${open ? "responsive_nav" : ""}`}>
         <ul className="nav__menu">
@@ -44,6 +51,6 @@ export const Navbar = () => {
           />
         )}
       </button>
-    </header>
+    </motion.header>
   );
 };

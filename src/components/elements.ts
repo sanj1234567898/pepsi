@@ -43,3 +43,31 @@ export const asideLink = [
     link: "/",
   },
 ];
+
+export const card = [
+  {
+    text: "Sugar syrup",
+    gramm: "150 cL",
+    gramm2: "150 cL",
+  },
+  {
+    text: "Caffeine",
+    gramm: "10 g",
+    gramm2: "150 cL",
+  },
+  {
+    text: "Citric Acid",
+    gramm: "0.8 cL",
+    gramm2: "150 cL",
+  },
+  {
+    text: "Natural Flavour",
+    gramm: "200 g",
+    gramm2: "150 cL",
+  },
+  {
+    text: "Fructose",
+    gramm: "200 g",
+    gramm2: "150 cL",
+  },
+];
