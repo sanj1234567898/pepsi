@@ -20,7 +20,7 @@ export default function Home() {
         <Navbar />
         <motion.div
           className="gradient-01"
-          variants={textVariant2(2)}
+          variants={textVariant2(1)}
           initial={"hidden"}
           animate={"show"}
         />
