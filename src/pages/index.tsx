@@ -37,7 +37,33 @@ export default function Home() {
                     <p className="item__gramm2">150cL</p>
                   </div>
                 </div>
-
+                <div className="card__item">
+                  <div className="card__top">
+                    <p className="item__title">Sugar syrup</p>
+                    <p className="item__gramm">150 cL</p>
+                  </div>
+                  <div className="card__bottom">
+                    <p className="item__gramm2">150cL</p>
+                  </div>
+                </div>{" "}
+                <div className="card__item">
+                  <div className="card__top">
+                    <p className="item__title">Sugar syrup</p>
+                    <p className="item__gramm">150 cL</p>
+                  </div>
+                  <div className="card__bottom">
+                    <p className="item__gramm2">150cL</p>
+                  </div>
+                </div>{" "}
+                <div className="card__item">
+                  <div className="card__top">
+                    <p className="item__title">Sugar syrup</p>
+                    <p className="item__gramm">150 cL</p>
+                  </div>
+                  <div className="card__bottom">
+                    <p className="item__gramm2">150cL</p>
+                  </div>
+                </div>{" "}
                 <div className="card__item">
                   <div className="card__top">
                     <p className="item__title">Sugar syrup</p>
