@@ -46,7 +46,7 @@ export const Product = () => {
             animate={"show"}
           >
             Rich in energy, our drinks will revitalize your body and get you
-            ready for the day’s activities
+            ready for the day's activities
           </motion.p>
         </div>
 
